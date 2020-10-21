@@ -10,23 +10,29 @@ public class ArrayStuff {
     public static void main (String[] args) {
         // Create the input scanner
         Scanner input = new Scanner(System.in);
+        int user  = input.nextInt();
 
         // PART A
 
-        // TODO: Create integer array called "ages" with length 5.
+        //Create integer array called "ages" with length 5.
+        int [] ages = new int [5];
 
 
-        // TODO: Change the 3rd element of "ages" to be 18
+        //Change the 3rd element of "ages" to be 18
+        ages [2] = 18;
 
 
-        // TODO: Change the first element of "ages" to be an integer entered by the user
+        //  Change the first element of "ages" to be an integer entered by the user
         System.err.println("Enter an integer:");
+        ages [0] = input.nextInt();
 
 
-        // TODO: Change the last element of "ages" to be the first element squared
+        // Change the last element of "ages" to be the first element squared
+        ages [4] = (int)Math.pow(ages [0], 2);
 
 
-        // TODO: Print all of the elements of "ages", one per line
+        // Print all of the elements of "ages", one per line
+        System.out.print(ages);
 
 
 
